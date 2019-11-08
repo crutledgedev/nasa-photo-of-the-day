@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import PhotoList from "./components/PhotoList";
 import JumboTron from "./components/JumboTron"
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       
       <PhotoList/>
       
-      
+      <Footer/>
     </div>
   );
 }

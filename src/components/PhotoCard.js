@@ -25,7 +25,7 @@ const PhotoCard = (props) => {
         <CardBody>
         <CardSubtitle>Copyright: {props.credit}, {props.date}</CardSubtitle>
           <Descriptor>{props.description}</Descriptor>
-          <CardLink href="https://apod.nasa.gov/apod/archivepix.html">Discover the Universe</CardLink>
+          <CardLink href="https://apod.nasa.gov/apod/archivepix.html">APoD Archive</CardLink>
           <CardLink href="https://hubblesite.org/">HubbleSite.org</CardLink>
         </CardBody>
       </Card>

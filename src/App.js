@@ -1,12 +1,15 @@
 import React from "react";
 import "./App.css";
 import PhotoList from "./components/PhotoList";
-import PhotoCard from "./components/PhotoCard";
+import JumboTron from "./components/JumboTron"
+
 
 function App() {
   return (
+    
     <div className="App">
-      <h1>Nasa Photo Of the Day</h1>
+      <JumboTron/>
+      
       <PhotoList/>
       
       

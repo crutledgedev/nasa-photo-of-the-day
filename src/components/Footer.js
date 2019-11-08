@@ -4,7 +4,7 @@ const Footer = props =>{
 
     return (
         <footer>
-        <p>Image provided courtesy of the NASA Astronomy of Photo the Day API</p>    
+        <p>Image provided courtesy of NASA Astronomy Photo the Day API</p>    
         
         </footer>    
 

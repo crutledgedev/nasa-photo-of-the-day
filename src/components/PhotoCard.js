@@ -2,11 +2,14 @@ import React from "react";
 
 const PhotoCard = props =>{
     return (
-        <div className="photo-list" key={props.id}>
-            <h2>Hello{props.title}</h2>
-            <p>test{props.date}</p>
+        <div className="photoContent" key={props.id}>
+            <div classname="image-container">
+                <h2>{props.title}</h2>
+            </div>
+            <p>Credit: {props.credit}</p>        
             <img src={props.picture}/>
-            <p>double test{props.description}</p>
+            <p>{props.date}</p>
+            <p>{props.description}</p>
 
         </div>
     )

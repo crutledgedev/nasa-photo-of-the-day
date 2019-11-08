@@ -7,7 +7,7 @@ export default function PhotoList(){
 
  useEffect(() => {
      axios
-     .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+     .get("https://api.nasa.gov/planetary/apod?api_key=TyBY2uhZ2HP5ZipYNT7ocoGT8Rbim191rgoHwcCx")
          .then(response => {
              const photo = response.data;
              setPhoto(photo);
@@ -22,6 +22,8 @@ return (
         picture={photo.url}
         date={photo.date}
         description={photo.explanation}
+        credit={photo.copyright}
+
         
         />
 

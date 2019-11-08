@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <h1>Nasa Photo Of the Day</h1>
       <PhotoList/>
-      <PhotoCard/>
+      
       
     </div>
   );

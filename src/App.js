@@ -1,13 +1,20 @@
 import React from "react";
 import "./App.css";
+import PhotoList from "./components/PhotoList";
+import JumboTron from "./components/JumboTron"
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
+    
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      
+      <JumboTron/>
+      
+      <PhotoList/>
+      
+      <Footer/>
     </div>
   );
 }

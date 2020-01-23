@@ -3,6 +3,7 @@ import "./App.css";
 import PhotoList from "./components/PhotoList";
 import JumboTron from "./components/JumboTron"
 import Footer from "./components/Footer";
+import ApodDayPicker from './components/ApodDayPicker';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <JumboTron/>
       
       <PhotoList/>
+      <ApodDayPicker/>
       
       <Footer/>
     </div>

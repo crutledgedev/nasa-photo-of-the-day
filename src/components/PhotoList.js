@@ -11,8 +11,8 @@ export default function PhotoList(){
          .then(response => {
              const photo = response.data;
              setPhoto(photo);
-         console.log(response.data)
-     })
+         console.log(response.data);
+     }).catch(err => ("there has been an error"));
  },[]);
 
 return (

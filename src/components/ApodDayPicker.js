@@ -4,9 +4,16 @@ import PhotoCard from "./PhotoCard";
 
 export default function PhotoList(){
  const[photo, setPhoto] = useState([]);
- const[year, setYear] = useState("2012");
- const[month, setMonth] = useState("03");
- const[day, setDay] = useState("02");
+ const[year, setYear] = useState(2012);
+ const[month, setMonth] = useState(3);
+ const[day, setDay] = useState(2);
+
+
+ const handleYear = () => {
+     console.log(year);
+     setYear(year + 1);
+
+ }
 
 
  useEffect(() => {
@@ -21,6 +28,8 @@ export default function PhotoList(){
 
 return (
     <div className="photo">
+
+        
         <PhotoCard
         title={photo.title}
         picture={photo.url}

@@ -4,6 +4,8 @@ import PhotoList from "./components/PhotoList";
 import JumboTron from "./components/JumboTron"
 import Footer from "./components/Footer";
 import ApodDayPicker from './components/ApodDayPicker';
+import NavBar from "./components/NavBar";
+
 
 
 function App() {
@@ -11,7 +13,9 @@ function App() {
     
     <div className="App">
       
+      <NavBar/>
       <JumboTron/>
+      
       
       <PhotoList/>
       <ApodDayPicker/>

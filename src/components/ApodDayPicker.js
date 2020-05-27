@@ -29,7 +29,7 @@ export default function PhotoList(){
 return (
     <div className="photo">
 
-        
+
         <PhotoCard
         title={photo.title}
         picture={photo.url}

@@ -1,5 +1,5 @@
 import React from "react";
-import Styled from "styled-components";
+import styled from "styled-components";
 import {
   Card,
   // CardImg,
@@ -10,13 +10,13 @@ import {
   CardSubtitle,
 } from "reactstrap";
 
-const ContentContainer = Styled.div`
+const ContentContainer = styled.div`
   max-width: 60%;
   margin: 0 auto;
   font-size: 1.5rem;
 `;
-const Descriptor = Styled.p`
-font-size: 1.2rem;
+const Descriptor = styled.p`
+  font-size: 1.2rem;
 `;
 // {
 /* <CardText> */
@@ -32,7 +32,7 @@ const PhotoCard = (props) => {
         <img width="100%" src={props.props.url} alt="Space" />
         <CardBody>
           <CardSubtitle>
-            Copyright: {props.props.copyright}, {props.props.date}
+            Copyright: {props.props.copyright} {props.props.date}
           </CardSubtitle>
           <Descriptor>{props.props.explanation}</Descriptor>
           <CardLink href="https://apod.nasa.gov/apod/archivepix.html">

@@ -1,9 +1,14 @@
-import React from 'react';
-import Styled from 'styled-components';
+import React from "react";
+import Styled from "styled-components";
 import {
-  Card, CardImg, CardText, CardBody, CardLink,
-  CardTitle, CardSubtitle
-} from 'reactstrap';
+  Card,
+  // CardImg,
+  // CardText,
+  CardBody,
+  CardLink,
+  CardTitle,
+  CardSubtitle,
+} from "reactstrap";
 
 const ContentContainer = Styled.div`
   max-width: 60%;
@@ -13,19 +18,26 @@ const ContentContainer = Styled.div`
 const Descriptor = Styled.p`
 font-size: 1.2rem;
 `;
-{/* <CardText> */}
+// {
+/* <CardText> */
+// }
 const PhotoCard = (props) => {
+  console.log("PhotoCard Props", props.props);
   return (
     <ContentContainer>
       <Card>
         <CardBody>
-          <CardTitle>{props.title} </CardTitle>
+          <CardTitle>{props.props.title} </CardTitle>
         </CardBody>
-        <img width="100%" src={props.picture} alt="Astronomy Picture" />
+        <img width="100%" src={props.props.url} alt="Space" />
         <CardBody>
-        <CardSubtitle>Copyright: {props.credit}, {props.date}</CardSubtitle>
-          <Descriptor>{props.description}</Descriptor>
-          <CardLink href="https://apod.nasa.gov/apod/archivepix.html">APoD Archive</CardLink>
+          <CardSubtitle>
+            Copyright: {props.props.copyright}, {props.props.date}
+          </CardSubtitle>
+          <Descriptor>{props.props.explanation}</Descriptor>
+          <CardLink href="https://apod.nasa.gov/apod/archivepix.html">
+            APoD Archive
+          </CardLink>
           <CardLink href="https://hubblesite.org/">HubbleSite.org</CardLink>
         </CardBody>
       </Card>
@@ -35,13 +47,6 @@ const PhotoCard = (props) => {
 
 export default PhotoCard;
 
-
-
-
-
-
-
-
 // import React from "react";
 
 // const PhotoCard = props =>{
@@ -50,7 +55,7 @@ export default PhotoCard;
 //             <div classname="image-container">
 //                 <h2>{props.title}</h2>
 //             </div>
-//             <p>Credit: {props.credit}</p>        
+//             <p>Credit: {props.credit}</p>
 //             <img src={props.picture}/>
 //             <p>{props.date}</p>
 //             <p>{props.description}</p>
